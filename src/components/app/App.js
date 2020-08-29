@@ -1,10 +1,21 @@
 import React from 'react'
+import { Route, Switch } from "react-router-dom"
+import { HomePage, CardPage } from "../pages"
+
 import "./App.css"
- const App = () => {
+
+
+const App = () => {
+
     return (
-        <div>
-            <h1>App</h1>
-        </div>
+        <Switch>
+            <Route path="/"
+                component={HomePage}
+                exact />
+            <Route path="/card"
+                component={CardPage}
+            />
+        </Switch>
     )
 }
 export default App;
