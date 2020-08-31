@@ -10,7 +10,7 @@ const App = () => {
 
     return (
         <main role="main" className="container">
-            <ShopHeader numItems={5} total={210} />
+            <ShopHeader numItems={3} total={2518} />
             <Switch>
                 <Route path="/"
                     component={HomePage}
