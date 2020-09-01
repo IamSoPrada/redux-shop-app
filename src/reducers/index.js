@@ -1,53 +1,13 @@
-const initialState = {
-    books: [],
-    loading: true,
-    error: null,
-    cartItems: [
-        {
-            id: 1,
-            name: 'Book 1',
-            count: 3,
-            total: 150
-        },
-        {
-            id: 2,
-            name: 'Book 2',
-            count: 2,
-            total: 150
-        }
-    ],
-    orderTotal: 300 
+import updateBookList from "./BookList"
+import updateShoppingCart from "./ShoppingCart"
 
-}
 
-const reducer = (state = initialState, action) => {
-    switch (action.type) {
-        case 'FETCH_BOOKS_REQUEST':
-            return {
-                ...state,
-                books: [],
-                loading : true,
-                error: null
-            }
+const reducer = (state, action) => {
 
-        case 'FETCH_BOOKS_SUCCESS':
-            return {
-                ...state,
-                books: action.payload,
-                loading: false,
-                error: null
-            }
-        case 'FETCH_BOOKS_FAILURE':
-            return {
-                ...state,
-                books: [],
-                loading: false,
-                error: action.payload
-            }
-        default:
-            return state
+    return {
+        bookList: updateBookList(state, action),
+        shoppingCart: updateShoppingCart(state, action)
     }
-
 }
 
 

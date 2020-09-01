@@ -1,6 +1,10 @@
 .shopping-cart-table {
     margin-top: 45px;
-  }
+    text-align: center;
+}
+.shopping-cart-table h2 {
+    text-align: left;
+}
   
 .shopping-cart-table .total {
     text-align: right;

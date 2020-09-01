@@ -1,30 +1,31 @@
 import React from 'react'
+import {bookAddedToCart, bookRemovedFromCart, allBooksRemovedFromCart} from "../../actions"
 import "./ShoppingCartTable.css"
 import { connect } from "react-redux"
 
 const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) => {
     const renderRow = (item, idx) => {
-        const { id, name, count, total } = item;
+        const { id, title, count, total } = item;
         return (
             <tr key={id}>
                 <td>{idx + 1}</td>
-                <td>{name}</td>
+                <td>{title}</td>
                 <td>{count}</td>
                 <td>{total}</td>
                 <td>
                     <button
                         onClick={() => onIncrease(id)}
-                        className="btn btn-outline-success btn-sm float-left">
+                        className="btn btn-outline-success btn-sm float-center">
                         <i className="fa fa-plus-circle" />
                     </button>
                     <button
                         onClick={() => onDecrease(id)}
-                        className="btn btn-outline-warning btn-sm float-left">
+                        className="btn btn-outline-warning btn-sm float-center">
                         <i className="fa fa-minus-circle" />
                     </button>
                     <button
                         onClick={() => onDelete(id)}
-                        className="btn btn-outline-danger btn-sm float-left">
+                        className="btn btn-outline-danger btn-sm float-center">
                         <i className="fa fa-trash-o" />
                     </button>
 
@@ -46,7 +47,7 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
                         <th>Добавить / Удалить</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="table-text">
                     {items.map(renderRow)}
                 </tbody>
             </table>
@@ -59,24 +60,17 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
 }
 
 
-const mapStateToProps = ({ cartItems, orderTotal }) => {
+const mapStateToProps = ({shoppingCart:{ cartItems, orderTotal }}) => {
     return {
         items: cartItems,
         total: orderTotal
     }
 }
 
-const mapDispatchToProps = () => {
-    return {
-        onIncrease: (id) => {
-            console.log(`increase ${id}`)
-        },
-        onDecrease: (id) => {
-            console.log(`Decrease ${id}`)
-        },
-        onDelete: (id) => {
-            console.log(`Delete ${id}`)
-        }
-    }
+const mapDispatchToProps = {
+        onIncrease: bookAddedToCart,
+        onDecrease: bookRemovedFromCart,
+        onDelete: allBooksRemovedFromCart
+    
 }
 export default connect(mapStateToProps, mapDispatchToProps)(ShoppingCartTable);
