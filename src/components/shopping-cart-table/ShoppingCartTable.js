@@ -1,5 +1,5 @@
 import React from 'react'
-import {bookAddedToCart, bookRemovedFromCart, allBooksRemovedFromCart} from "../../actions"
+import {bookAddedToCart, bookRemovedFromCart, allBooksRemovedFromCart, totalReducer} from "../../actions"
 import "./ShoppingCartTable.css"
 import { connect } from "react-redux"
 
@@ -38,8 +38,8 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
 
 
     let currentTotal = items.map(item=> item.total)
-    const reducerTotal = (accumulator, currentTotal) => accumulator + currentTotal;
-    let reducedTotal = currentTotal.reduce(reducerTotal, 0)
+
+
 
     return (
         <div className="shopping-cart-table">
@@ -59,7 +59,7 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
                 </tbody>
             </table>
             <div className="total">
-                Итог: {reducedTotal} руб.
+                Итог: {totalReducer(currentTotal)} руб.
             </div>
 
         </div>

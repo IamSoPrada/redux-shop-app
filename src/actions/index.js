@@ -35,12 +35,20 @@ export const allBooksRemovedFromCart = (bookId) => {
     }
 }
 
+export const totalReducer = (current) => {
+    let reducer = (accumulator, current) => accumulator + current
+    let reducedTotal = current.reduce(reducer, 0);
+    return reducedTotal;
+}
+
+
 const fetchBooks = (bookStoreService, dispatch) => () => {
     dispatch(booksRequested())
     bookStoreService.getBooks()
         .then((data) => dispatch(booksLoaded(data)))
         .catch((err) => booksError(err))
 }
+
 
 export {
     fetchBooks
