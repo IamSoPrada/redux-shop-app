@@ -30,9 +30,16 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
                     </button>
 
                 </td>
+                
             </tr>
         )
     }
+
+
+
+    let currentTotal = items.map(item=> item.total)
+    const reducerTotal = (accumulator, currentTotal) => accumulator + currentTotal;
+    let reducedTotal = currentTotal.reduce(reducerTotal, 0)
 
     return (
         <div className="shopping-cart-table">
@@ -52,7 +59,7 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
                 </tbody>
             </table>
             <div className="total">
-                Итог: {total}
+                Итог: {reducedTotal} руб.
             </div>
 
         </div>

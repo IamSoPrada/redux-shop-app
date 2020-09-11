@@ -1,9 +1,10 @@
 import React from 'react'
+import ShoppingCartTable from "../shopping-cart-table"
 
  const CardPage = () => {
     return (
         <div>
-            CardPage
+            <ShoppingCartTable />
         </div>
     )
 }
