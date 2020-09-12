@@ -8,6 +8,7 @@
     font-family: "Playfair Display", Georgia, serif;
     font-size: 2.5rem;
     padding-left: 1rem;
+    margin-right: 0 auto;
 }
 
 .shop-header .shopping-cart {
@@ -19,6 +20,6 @@
 
 .shop-header .shopping-cart .cart-icon {
     font-size: 2.2rem;
-    color: cadetblue;
+    color: rgb(43, 43, 43);
     margin-right: 10px;
 }

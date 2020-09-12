@@ -11,25 +11,38 @@ const ShopHeader = ({items}) => {
 
 
     return (
+
         <header className="shop-header row">
             <Link to="/">
                 <div className="logo text-dark" href="#">Frontend Library</div>
             </Link>
 
-            <Link to="/cart">
-                <div className="shopping-cart">
-                    <i className="cart-icon fa fa-shopping-cart" />
-                     {totalReducer(currentCount)} ед. ({totalReducer(currentTotal)} руб)
+            <div className="row">
+                <Link to ="/login">
+                    <div className="shopping-cart">
+                        <i class="cart-icon fa fa-user" />
+                    </div>
+                </Link>
+                <Link to ="/wishlist">
+                    <div className="shopping-cart">
+                    <i class="fa fa-heart cart-icon" />
+                    </div>
+                </Link>
+                <Link to="/cart">
+                    <div className="shopping-cart">
+                        <i className="cart-icon fa fa-shopping-cart" />
+                        {totalReducer(currentCount)} ед. ({totalReducer(currentTotal)} руб)
+                </div>
+                </Link>
+
             </div>
-            </Link>
         </header>
     )
 }
 
 const mapStateToProps = ({shoppingCart:{ cartItems, orderTotal }}) => {
     return {
-        items: cartItems,
-        total: orderTotal
+        items: cartItems
     }
 }
 
