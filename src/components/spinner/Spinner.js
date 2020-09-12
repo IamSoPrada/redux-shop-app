@@ -3,9 +3,9 @@ import "./Spinner.css"
 
  const Spinner = () => {
     return (
-        <div>
-            <h1> LOADING </h1>
-        </div>
+        
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        
     )
 }
 export default Spinner;
