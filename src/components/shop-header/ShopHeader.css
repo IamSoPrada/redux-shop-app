@@ -16,10 +16,17 @@
     font-size: 1.3rem;
     padding-right: 1rem;
     padding-top: 1rem;
+    color: black;
 }
 
 .shop-header .shopping-cart .cart-icon {
     font-size: 2.2rem;
-    color: rgb(43, 43, 43);
+    color: rgb(252, 118, 118);
     margin-right: 10px;
+}
+.shop-header .shopping-cart .fa-shopping-cart {
+    color: rgb(57, 83, 100);
+}
+.shop-header .shopping-cart .fa-user {
+    color: rgb(57, 83, 100);
 }

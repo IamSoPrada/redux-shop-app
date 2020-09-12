@@ -7,6 +7,7 @@ import {totalReducer} from "../../actions"
 const ShopHeader = ({items}) => {
 
     let currentTotal = items.map(item=> item.total)
+
     let currentCount = items.map(item => item.count)
 
 
