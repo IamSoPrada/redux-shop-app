@@ -1,6 +1,6 @@
 .book-list-item{
     display: flex;
-    margin: 15px 0;
+    margin: 10px;
 }
 
 .book-list-item .book-cover {

@@ -1,12 +1,15 @@
 import React from 'react'
-import Categories from "../categories"
-const HomePage = () => {
+/* import GiftList from "../gift-list" */
 
+import Categories from "../categories"
+
+ const Books = () => {
     return (
         <div>
             <Categories />
+            
+{/*             <GiftList /> */}
         </div>
-        
     )
 }
-export default HomePage;
+export default Books;

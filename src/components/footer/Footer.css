@@ -1,0 +1,10 @@
+.container-footer {
+  padding: 0 10px;
+}
+
+.footer {
+  position: fixed;
+  height: 20px;
+  bottom: 10px;
+  width: 100%;
+}

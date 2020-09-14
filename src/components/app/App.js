@@ -1,7 +1,9 @@
 import React from 'react'
 import { Route, Switch } from "react-router-dom"
 import ShopHeader from "../shop-header"
-import { HomePage, CardPage } from "../pages"
+import Footer from '../footer'
+import Login from '../login'
+import { HomePage, CardPage, Books, Gifts } from "../pages"
 
 import "./App.css"
 
@@ -9,8 +11,11 @@ import "./App.css"
 const App = () => {
 
     return (
-        <main role="main" className="container">
+
+        <>
+        <main role="main" className="container ">
             <ShopHeader numItems={3} total={2518} />
+
             <Switch>
                 <Route path="/"
                     component={HomePage}
@@ -18,8 +23,21 @@ const App = () => {
                 <Route path="/cart"
                     component={CardPage}
                 />
+                <Route path="/login"
+                    component={Login}
+                />
+                <Route path="/books"
+                    component={Books}
+                />
+                <Route path="/gifts"
+                    component={Gifts}
+                />
             </Switch>
         </main>
+        
+        <Footer />
+        
+        </>
 
     )
 }

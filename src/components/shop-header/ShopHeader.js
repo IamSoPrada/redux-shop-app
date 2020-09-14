@@ -41,7 +41,7 @@ const ShopHeader = ({items}) => {
     )
 }
 
-const mapStateToProps = ({shoppingCart:{ cartItems, orderTotal }}) => {
+const mapStateToProps = ({shoppingCart:{ cartItems}}) => {
     return {
         items: cartItems
     }
