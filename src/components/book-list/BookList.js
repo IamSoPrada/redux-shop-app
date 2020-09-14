@@ -4,7 +4,7 @@ import Spinner from "../spinner"
 import { connect } from "react-redux"
 
 import { WithBookStoreService } from "../hoc"
-import { fetchBooks, bookAddedToCart } from "../../actions"
+import { fetchBooks, bookAddedToCart, fetchGifts } from "../../actions"
 import { compose } from "../../utils"
 import "./BookList.css"
 import ErrorIndicator from '../error-indicator'
@@ -32,7 +32,12 @@ class BookListContainer extends Component {
 
 
     componentDidMount() {
-        this.props.fetchBooks();
+        if(this.props.gifts){
+            this.props.fetchGifts();
+        } else {
+            this.props.fetchBooks()
+        }
+        
     }
 
     render() {
@@ -56,6 +61,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     const { bookStoreService } = ownProps;
     return {
         fetchBooks: fetchBooks(bookStoreService, dispatch),
+        fetchGifts: fetchGifts(bookStoreService, dispatch),
         onAddedToCart: (id) => dispatch(bookAddedToCart(id))
     }
 }

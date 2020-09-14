@@ -1,5 +1,5 @@
 export default class BookStoreService {
-    data = [
+    dataBookS = [
     
         {
             "coverImage": "https://www.bookvoed.ru/files/1377/38/79/63/6.jpeg",
@@ -482,11 +482,562 @@ export default class BookStoreService {
            }
     ];
 
+    dataGifts = [
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/34/96/27/2.png",
+         "id": "https://www.bookvoed.ru/book?id=656762",
+         "title": "Настольная игра \"Имаджинариум\"",
+         "title_url": "https://www.bookvoed.ru/book?id=656762",
+         "price": [
+          "1399"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/79/84/91/7.jpg",
+         "id": "https://www.bookvoed.ru/book?id=664033",
+         "title": "Настольная игра \"Свинтус\"",
+         "title_url": "https://www.bookvoed.ru/book?id=664033",
+         "price": [
+          "390"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/79/64/70/9.jpg",
+         "id": "https://www.bookvoed.ru/book?id=662655",
+         "title": "Пазл \"Историческая карта мира\", 2000.",
+         "title_url": "https://www.bookvoed.ru/book?id=662655",
+         "price": [
+          "399"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/54/33/12/5.jpg",
+         "id": "https://www.bookvoed.ru/book?id=8632548",
+         "title": "3Д Куб-лабиринт малый, 6 см",
+         "title_url": "https://www.bookvoed.ru/book?id=8632548",
+         "price": [
+          "220"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/79/33/46/4.jpg",
+         "id": "https://www.bookvoed.ru/book?id=6515568",
+         "title": "Настольная игра \"500 злобных карт..",
+         "title_url": "https://www.bookvoed.ru/book?id=6515568",
+         "price": [
+          "1199"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/79/60/18/0.jpg",
+         "id": "https://www.bookvoed.ru/book?id=2647486",
+         "title": "Настольная игра Словодел 00309",
+         "title_url": "https://www.bookvoed.ru/book?id=2647486",
+         "price": [
+          "322"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/24/18/47/1.jpg",
+         "id": "https://www.bookvoed.ru/book?id=6020897",
+         "title": "Кубик Рубика 3х3 без наклеек",
+         "title_url": "https://www.bookvoed.ru/book?id=6020897",
+         "price": [
+          "1002"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/25/50/35/9.png",
+         "id": "https://www.bookvoed.ru/book?id=6142832",
+         "title": "Настольная игра \"Экивоки \"",
+         "title_url": "https://www.bookvoed.ru/book?id=6142832",
+         "price": [
+          "1499"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/79/26/76/0.jpg",
+         "id": "https://www.bookvoed.ru/book?id=453432",
+         "title": "Настольная игра, \"Эволюция\"",
+         "title_url": "https://www.bookvoed.ru/book?id=453432",
+         "price": [
+          "799"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/34/95/48/8.png",
+         "id": "https://www.bookvoed.ru/book?id=6515353",
+         "title": "Настольная игра \"500 злобных карт..",
+         "title_url": "https://www.bookvoed.ru/book?id=6515353",
+         "price": [
+          "499"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/44/66/78/6.jpg",
+         "id": "https://www.bookvoed.ru/book?id=7847568",
+         "title": "Настольная игра Cosmodrome Games Котэм.",
+         "title_url": "https://www.bookvoed.ru/book?id=7847568",
+         "price": [
+          "699"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/58/57/56/8.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=656739",
+         "title": "Настольная экономическая игра \"Миллионер.",
+         "title_url": "https://www.bookvoed.ru/book?id=656739",
+         "price": [
+          "799"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/79/60/15/9.jpg",
+         "id": "https://www.bookvoed.ru/book?id=2643542",
+         "title": "Настольная игра: Имаджинариум Детство.",
+         "title_url": "https://www.bookvoed.ru/book?id=2643542",
+         "price": [
+          "1399"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/23/22/55/5.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=599916",
+         "title": "Лото, Step, Буквы-цифры, 48 фишек, 6.",
+         "title_url": "https://www.bookvoed.ru/book?id=599916",
+         "price": [
+          "182"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/35/68/69.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=455909",
+         "title": "Настольная игра, \"Эрудит\"",
+         "title_url": "https://www.bookvoed.ru/book?id=455909",
+         "price": [
+          "569"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/54/46/27/9.jpg",
+         "id": "https://www.bookvoed.ru/book?id=8632381",
+         "title": "Ксилофон Животные ассорти, в пакете.",
+         "title_url": "https://www.bookvoed.ru/book?id=8632381",
+         "price": [
+          "200"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/54/33/19/8.jpg",
+         "id": "https://www.bookvoed.ru/book?id=8632476",
+         "title": "Домино Домашние животные, 28.",
+         "title_url": "https://www.bookvoed.ru/book?id=8632476",
+         "price": [
+          "262"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/79/60/22/2.jpg",
+         "id": "https://www.bookvoed.ru/book?id=3308416",
+         "title": "Настольная игра \"Дженга\"",
+         "title_url": "https://www.bookvoed.ru/book?id=3308416",
+         "price": [
+          "1541"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/23/22/55/7.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=570748",
+         "title": "Лото, Step, Растения-животные, 48 фишек,.",
+         "title_url": "https://www.bookvoed.ru/book?id=570748",
+         "price": [
+          "182"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/58/57/57/9.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=611112",
+         "title": "Миллионер-элит: Экономическая настольная.",
+         "title_url": "https://www.bookvoed.ru/book?id=611112",
+         "price": [
+          "552"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/33/93/94/9.jpg",
+         "id": "https://www.bookvoed.ru/book?id=6813391",
+         "title": "Настольная игра \"Кодовые имена\".",
+         "title_url": "https://www.bookvoed.ru/book?id=6813391",
+         "price": [
+          "1312"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/58/57/57/3.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=668753",
+         "title": "Настольная игра \"Миллионер-классик\".",
+         "title_url": "https://www.bookvoed.ru/book?id=668753",
+         "price": [
+          "739"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/52/08/23/2.jpg",
+         "id": "https://www.bookvoed.ru/book?id=8541626",
+         "title": "Настольная игра Детективные историии:.",
+         "title_url": "https://www.bookvoed.ru/book?id=8541626",
+         "price": [
+          "270"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/40/48/50/8.png",
+         "id": "https://www.bookvoed.ru/book?id=6070980",
+         "title": "Настольная игра \"Друг - утюг\"",
+         "title_url": "https://www.bookvoed.ru/book?id=6070980",
+         "price": [
+          "729"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/58/57/56/6.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=656803",
+         "title": "Экономическая настольная игра \"Миллионер.",
+         "title_url": "https://www.bookvoed.ru/book?id=656803",
+         "price": [
+          "739"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/38/60/27/0.png",
+         "id": "https://www.bookvoed.ru/book?id=7210466",
+         "title": "Настольная игра \"Имаджинариум 5 лет\"",
+         "title_url": "https://www.bookvoed.ru/book?id=7210466",
+         "price": [
+          "1799"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/36/68/08/3.jpg",
+         "id": "https://www.bookvoed.ru/book?id=7066912",
+         "title": "Настольная игра, SELFIE MEDIA, Лобстер",
+         "title_url": "https://www.bookvoed.ru/book?id=7066912",
+         "price": [
+          "202"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/79/82/53/8.jpg",
+         "id": "https://www.bookvoed.ru/book?id=3242817",
+         "title": "Настольная игра \"Шакал\"",
+         "title_url": "https://www.bookvoed.ru/book?id=3242817",
+         "price": [
+          "1590"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/26/26/84/2.png",
+         "id": "https://www.bookvoed.ru/book?id=6215501",
+         "title": "Игра, Развивающая игра, Лаборатория игр,.",
+         "title_url": "https://www.bookvoed.ru/book?id=6215501",
+         "price": [
+          "592"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/25/41/01/2.png",
+         "id": "https://www.bookvoed.ru/book?id=6144107",
+         "title": "Настольная игра ЗВЕЗДА, Вокруг света за.",
+         "title_url": "https://www.bookvoed.ru/book?id=6144107",
+         "price": [
+          "969"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/58/57/57/0.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=2655421",
+         "title": "Игра настольная \"Миллионер-делюкс\"",
+         "title_url": "https://www.bookvoed.ru/book?id=2655421",
+         "price": [
+          "552"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/44/73/19/7.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=6076561",
+         "title": "Настольная игра \"Манчкин Делюкс\"",
+         "title_url": "https://www.bookvoed.ru/book?id=6076561",
+         "price": [
+          "1990"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/31/79/64/3.jpg",
+         "id": "https://www.bookvoed.ru/book?id=6343272",
+         "title": "Настольная игра ALIAS, Скажи Иначе.",
+         "title_url": "https://www.bookvoed.ru/book?id=6343272",
+         "price": [
+          "1162"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/64/10/83/5.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=9387871",
+         "title": "Сортер деревянный в термоусадке.",
+         "title_url": "https://www.bookvoed.ru/book?id=9387871",
+         "price": [
+          "561"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/54/33/24/7.jpg",
+         "id": "https://www.bookvoed.ru/book?id=8632277",
+         "title": "Мячи-прыгуны на блистере, 6 шт. ассорти",
+         "title_url": "https://www.bookvoed.ru/book?id=8632277",
+         "price": [
+          "132"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/79/60/25/6.jpg",
+         "id": "https://www.bookvoed.ru/book?id=3303188",
+         "title": "БИПЛАНТ Развивающая игра Эрудит \"Сила.",
+         "title_url": "https://www.bookvoed.ru/book?id=3303188",
+         "price": [
+          "969"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/64/16/93/0.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=633516",
+         "title": "Игра настольная Мозаика 170 фишек 6 цв..",
+         "title_url": "https://www.bookvoed.ru/book?id=633516",
+         "price": [
+          "172"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/32/88/90/5.JPG",
+         "id": "https://www.bookvoed.ru/book?id=6502269",
+         "title": "Настольная игра Достопримечательности.",
+         "title_url": "https://www.bookvoed.ru/book?id=6502269",
+         "price": [
+          "440"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/32/57/56/9.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=6033461",
+         "title": "Пазлы. Азбука для малышей",
+         "title_url": "https://www.bookvoed.ru/book?id=6033461",
+         "price": [
+          "362"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/45/66/16/3.jpg",
+         "id": "https://www.bookvoed.ru/book?id=6155530",
+         "title": "Настольная игра \"Крокодил ВсякоРазный\"",
+         "title_url": "https://www.bookvoed.ru/book?id=6155530",
+         "price": [
+          "490"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/26/95/08/4.jpg",
+         "id": "https://www.bookvoed.ru/book?id=6248134",
+         "title": "Кубик Рубика 4х4 (без наклеек)",
+         "title_url": "https://www.bookvoed.ru/book?id=6248134",
+         "price": [
+          "1281"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/26/72/24.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=407241",
+         "title": "Школа Семи Гномов 4-5 лет. Полный.",
+         "title_url": "https://www.bookvoed.ru/book?id=407241",
+         "price": [
+          "1260"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/24/27/00/3.gif",
+         "id": "https://www.bookvoed.ru/book?id=636632",
+         "title": "Кто осел?",
+         "title_url": "https://www.bookvoed.ru/book?id=636632",
+         "price": [
+          "422"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/56/66/88/3.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=652335",
+         "title": "Паззл Castorland 1500 эл. 68*47см..",
+         "title_url": "https://www.bookvoed.ru/book?id=652335",
+         "price": [
+          "410"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/40/48/51/4.png",
+         "id": "https://www.bookvoed.ru/book?id=6151784",
+         "title": "Настольная игра \"Доббль\"",
+         "title_url": "https://www.bookvoed.ru/book?id=6151784",
+         "price": [
+          "992"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/68/26/49/7.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=406601",
+         "title": "Школа Семи Гномов 1-2 года. Полный.",
+         "title_url": "https://www.bookvoed.ru/book?id=406601",
+         "price": [
+          "1260"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/23/61/16/6.jpg",
+         "id": "https://www.bookvoed.ru/book?id=590179",
+         "title": "Настольная игра \"Зельеварение..",
+         "title_url": "https://www.bookvoed.ru/book?id=590179",
+         "price": [
+          "699"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/24/18/47/6.jpg",
+         "id": "https://www.bookvoed.ru/book?id=6021019",
+         "title": "Лаборатория игр Брелок \"Мини-Кубик.",
+         "title_url": "https://www.bookvoed.ru/book?id=6021019",
+         "price": [
+          "452"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/30/50/21/4.jpg",
+         "id": "https://www.bookvoed.ru/book?id=6515375",
+         "title": "Настольная игра \"Башня \"54 ххх\".",
+         "title_url": "https://www.bookvoed.ru/book?id=6515375",
+         "price": [
+          "1262"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/32/90/19/7.jpg",
+         "id": "https://www.bookvoed.ru/book?id=6711286",
+         "title": "Настольная игра ЗВЕЗДА, Love is/Лав.",
+         "title_url": "https://www.bookvoed.ru/book?id=6711286",
+         "price": [
+          "261"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/68/27/70/5.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=407240",
+         "title": "Школа Семи Гномов 3-4 года. Полный.",
+         "title_url": "https://www.bookvoed.ru/book?id=407240",
+         "price": [
+          "1260"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/79/92/37/1.jpg",
+         "id": "https://www.bookvoed.ru/book?id=620005",
+         "title": "Настольная игра \"Каркассон. Королевский.",
+         "title_url": "https://www.bookvoed.ru/book?id=620005",
+         "price": [
+          "2990"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/26/72/22.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=417793",
+         "title": "Школа Семи Гномов 2-3 года. Полный.",
+         "title_url": "https://www.bookvoed.ru/book?id=417793",
+         "price": [
+          "1260"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/67/78/42/6.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=468010",
+         "title": "Настольная игра \"Морской бой версия 2:0\"",
+         "title_url": "https://www.bookvoed.ru/book?id=468010",
+         "price": [
+          "639"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/58/60/87/4.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=3237139",
+         "title": "Настольная игра \"Свинтус правила.",
+         "title_url": "https://www.bookvoed.ru/book?id=3237139",
+         "price": [
+          "390"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/50/24/58/2.jpg",
+         "id": "https://www.bookvoed.ru/book?id=8388597",
+         "title": "Набор для опытов, НТ, Серия лучших.",
+         "title_url": "https://www.bookvoed.ru/book?id=8388597",
+         "price": [
+          "719"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/31/79/64/2.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=6343397",
+         "title": "Настольная игра Alias \"Скажи Иначе 3\"",
+         "title_url": "https://www.bookvoed.ru/book?id=6343397",
+         "price": [
+          "1091"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/40/25/17/4.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=7415647",
+         "title": "Алфавит. 33 карточки-пазла",
+         "title_url": "https://www.bookvoed.ru/book?id=7415647",
+         "price": [
+          "371"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/68/96/30/2.jpeg",
+         "id": "https://www.bookvoed.ru/book?id=9337052",
+         "title": "Машина-трюкач с резиновыми колесами.",
+         "title_url": "https://www.bookvoed.ru/book?id=9337052",
+         "price": [
+          "292"
+         ]
+        },
+        {
+         "coverImage": "https://www.bookvoed.ru/files/1377/24/27/80/9.png",
+         "id": "https://www.bookvoed.ru/book?id=6016848",
+         "title": "Настольная карточная игра \"Хоббит\"",
+         "title_url": "https://www.bookvoed.ru/book?id=6016848",
+         "price": [
+          "490"
+         ]
+        }
+       ]
 
     getBooks() {
         return new Promise ((resolve, reject) => {
             setTimeout(() => {
-                resolve(this.data)
+                resolve(this.dataBookS)
+                reject(new Error("Something went wrong"))
+            }, 700)
+        })
+    }
+
+    getGifts() {
+        return new Promise ((resolve, reject) => {
+            setTimeout(() => {
+                resolve(this.dataGifts)
                 reject(new Error("Something went wrong"))
             }, 700)
         })

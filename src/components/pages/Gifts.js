@@ -1,15 +1,13 @@
 import React from 'react'
-/* import GiftList from "../gift-list" */
-
+import BookList from "../book-list"
 import Categories from "../categories"
 
- const Books = () => {
+ const Gifts = () => {
     return (
         <div>
             <Categories />
-            
-{/*             <GiftList /> */}
+            <BookList gifts={true}/>
         </div>
     )
 }
-export default Books;
+export default Gifts;

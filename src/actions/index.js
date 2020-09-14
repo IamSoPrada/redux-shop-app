@@ -49,7 +49,14 @@ const fetchBooks = (bookStoreService, dispatch) => () => {
         .catch((err) => booksError(err))
 }
 
+const fetchGifts = (bookStoreService, dispatch) => () => {
+    dispatch(booksRequested())
+    bookStoreService.getGifts()
+        .then((data) => dispatch(booksLoaded(data)))
+        .catch((err) => booksError(err))
+}
 
 export {
-    fetchBooks
+    fetchBooks,
+    fetchGifts
 }

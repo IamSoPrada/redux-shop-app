@@ -11,11 +11,14 @@ const Jumbotron = () => {
             </div>
     )
 }
+
+
 const HomePage = () => {
 
     return (
-        <div className="d-flex flex-column justify-content-between">
+        <div className="d-flex flex-column justify-content-between align-items-center">
             <Categories />
+
             <Jumbotron />
         </div>
         
