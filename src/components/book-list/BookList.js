@@ -12,16 +12,21 @@ import ErrorIndicator from '../error-indicator'
 
 
 
-const BookList = ({ books, onAddedToCart }) => {
+const BookList = ({ books, onAddedToCart, category }) => {
 
     return (
         <ul className="book-list p-0 mt-4">
             {
                 books.map(book => {
-                    return (
-                        <li key={book.id}> <BookListItem book={book}
-                            onAddedToCart={() => onAddedToCart(book.id)} /></li>
-                    )
+                    if(book.category === category){
+                        return (
+                            <li key={book.id}> <BookListItem book={book}
+                                onAddedToCart={() => onAddedToCart(book.id)} /></li>
+                        )
+                    } else {
+                        return null
+                    }
+                    
                 })
             }
         </ul>
@@ -32,23 +37,18 @@ class BookListContainer extends Component {
 
 
     componentDidMount() {
-        if(this.props.gifts){
-            this.props.fetchGifts();
-        } else {
-            this.props.fetchBooks()
-        }
-        
+        this.props.fetchBooks()
     }
 
     render() {
-        const { books, loading, error, onAddedToCart } = this.props
+        const { books, loading, error, onAddedToCart, category } = this.props
         if (loading) {
             return <Spinner />
         }
         if (error) {
             return <ErrorIndicator />
         }
-        return <BookList books={books} onAddedToCart ={onAddedToCart }/>
+        return <BookList category={category} books={books} onAddedToCart ={onAddedToCart }/>
     }
 }
 
