@@ -1,7 +1,7 @@
 .book-list-item{
     display: flex;
     padding: 10px;
-    border: 1px black solid;
+    border: 1px solid #ced4da;
     margin: 10px 0 10px 0;
     
 }
