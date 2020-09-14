@@ -1,5 +1,6 @@
 export default class BookStoreService {
-    dataBookS = [
+    data = {
+    dataBookS : [
     
         {
             "coverImage": "https://www.bookvoed.ru/files/1377/38/79/63/6.jpeg",
@@ -479,10 +480,18 @@ export default class BookStoreService {
             "title": "Легкий способ выучить Python 3",
             "title_url": "https://www.bookvoed.ru/book?id=10403162",
             "price": "567"
+           },
+           {
+            "coverImage": "https://www.bookvoed.ru/files/1377/34/96/27/2.png",
+            "id": "https://www.bookvoed.ru/book?id=656762",
+            "title": "Настольная игра \"Имаджинариум\"",
+            "title_url": "https://www.bookvoed.ru/book?id=656762",
+            "price": [
+             "1399"
+            ]
            }
-    ];
-
-    dataGifts = [
+    ],
+    dataGifts : [
         {
          "coverImage": "https://www.bookvoed.ru/files/1377/34/96/27/2.png",
          "id": "https://www.bookvoed.ru/book?id=656762",
@@ -1024,11 +1033,12 @@ export default class BookStoreService {
          ]
         }
        ]
+    }
 
     getBooks() {
         return new Promise ((resolve, reject) => {
             setTimeout(() => {
-                resolve(this.dataBookS)
+                resolve(this.data.dataBookS)
                 reject(new Error("Something went wrong"))
             }, 700)
         })
@@ -1037,7 +1047,7 @@ export default class BookStoreService {
     getGifts() {
         return new Promise ((resolve, reject) => {
             setTimeout(() => {
-                resolve(this.dataGifts)
+                resolve(this.data.dataGifts)
                 reject(new Error("Something went wrong"))
             }, 700)
         })

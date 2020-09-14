@@ -3,7 +3,7 @@ import {bookAddedToCart, bookRemovedFromCart, allBooksRemovedFromCart, totalRedu
 import "./ShoppingCartTable.css"
 import { connect } from "react-redux"
 
-const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) => {
+const ShoppingCartTable = ({ items, onIncrease, onDecrease, onDelete }) => {
     const renderRow = (item, idx) => {
         const { id, title, count, total } = item;
         return (
