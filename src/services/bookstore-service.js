@@ -20,7 +20,7 @@ export default class BookStoreService {
                 "title": "Чистый код: создание, анализ и ",
                 "title_url": "https://www.bookvoed.ru/book?id=8551226",
                 "price": [
-                 "552 "
+                 "550"
                 ],
                 "category": "Программирование"
                },
@@ -31,7 +31,7 @@ export default class BookStoreService {
                 "title": "Чистая архитектура. Искусство разработки ",
                 "title_url": "https://www.bookvoed.ru/book?id=8273496",
                 "price": [
-                 "686 "
+                 "685"
                 ],
                 "category": "Программирование"
                },
@@ -42,7 +42,7 @@ export default class BookStoreService {
                 "title": "Изучаем Java",
                 "title_url": "https://www.bookvoed.ru/book?id=433611",
                 "price": [
-                 "1 042 "
+                 "1040"
                 ],
                 "category": "Программирование"
                },
@@ -53,7 +53,7 @@ export default class BookStoreService {
                 "title": "Мастер-класс. Совершенный код.",
                 "title_url": "https://www.bookvoed.ru/book?id=7723622",
                 "price": [
-                 "1 233 "
+                 "1232"
                 ],
                 "category": "Программирование"
                },
@@ -64,7 +64,7 @@ export default class BookStoreService {
                 "title": "Изучаем Python: программирование игр, ",
                 "title_url": "https://www.bookvoed.ru/book?id=10364448",
                 "price": [
-                 "1 016 "
+                 "1015"
                 ],
                 "category": "Программирование"
                },
@@ -86,7 +86,7 @@ export default class BookStoreService {
                 "title": "Изучаем программирование на Python",
                 "title_url": "https://www.bookvoed.ru/book?id=7515729",
                 "price": [
-                 "1 042 "
+                 "1040"
                 ],
                 "category": "Программирование"
                },
@@ -97,7 +97,7 @@ export default class BookStoreService {
                 "title": "Легкий способ выучить Python 3",
                 "title_url": "https://www.bookvoed.ru/book?id=10041789",
                 "price": [
-                 "567 "
+                 "565"
                 ],
                 "category": "Программирование"
                },
@@ -108,7 +108,7 @@ export default class BookStoreService {
                 "title": "Грокаем глубокое обучение",
                 "title_url": "https://www.bookvoed.ru/book?id=10111415",
                 "price": [
-                 "739 "
+                 "735"
                 ],
                 "category": "Программирование"
                },
@@ -119,7 +119,7 @@ export default class BookStoreService {
                 "title": "Программируем на Python",
                 "title_url": "https://www.bookvoed.ru/book?id=6020823",
                 "price": [
-                 "846 "
+                 "845"
                 ],
                 "category": "Программирование"
                },
@@ -130,7 +130,7 @@ export default class BookStoreService {
                 "title": "Объектно-ориентированное ",
                 "title_url": "https://www.bookvoed.ru/book?id=668053",
                 "price": [
-                 "1 270 "
+                 "1270"
                 ],
                 "category": "Программирование"
                },
@@ -141,7 +141,7 @@ export default class BookStoreService {
                 "title": "Unity в действии. Мультиплатформенная ",
                 "title_url": "https://www.bookvoed.ru/book?id=9078925",
                 "price": [
-                 "900 "
+                 "900"
                 ],
                 "category": "Программирование"
                },
@@ -152,7 +152,7 @@ export default class BookStoreService {
                 "title": "Изучаем Arduino: инструменты и методы ",
                 "title_url": "https://www.bookvoed.ru/book?id=6166341",
                 "price": [
-                 "548 "
+                 "545"
                 ],
                 "category": "Программирование"
                },
@@ -163,7 +163,7 @@ export default class BookStoreService {
                 "title": "Простой Python. Современный стиль ",
                 "title_url": "https://www.bookvoed.ru/book?id=6816975",
                 "price": [
-                 "1 033 "
+                 "1032"
                 ],
                 "category": "Программирование"
                },
@@ -185,7 +185,7 @@ export default class BookStoreService {
                 "title": "Идеальный программист. Как стать ",
                 "title_url": "https://www.bookvoed.ru/book?id=8840372",
                 "price": [
-                 "504 "
+                 "505"
                 ],
                 "category": "Программирование"
                },
@@ -196,7 +196,7 @@ export default class BookStoreService {
                 "title": "Алгоритмы. Теория и практическое ",
                 "title_url": "https://www.bookvoed.ru/book?id=6679548",
                 "price": [
-                 "804 "
+                 "805"
                 ],
                 "category": "Программирование"
                },
@@ -207,7 +207,7 @@ export default class BookStoreService {
                 "title": "Программирование на Java для начинающих",
                 "title_url": "https://www.bookvoed.ru/book?id=7355548",
                 "price": [
-                 "658 "
+                 "655"
                 ],
                 "category": "Программирование"
                },
@@ -218,7 +218,7 @@ export default class BookStoreService {
                 "title": "Программирование на C++ в примерах и ",
                 "title_url": "https://www.bookvoed.ru/book?id=7077651",
                 "price": [
-                 "490 "
+                 "490"
                 ],
                 "category": "Программирование"
                },
@@ -229,7 +229,7 @@ export default class BookStoreService {
                 "title": "Swift. Основы разработки приложений под ",
                 "title_url": "https://www.bookvoed.ru/book?id=10212296",
                 "price": [
-                 "824 "
+                 "825"
                 ],
                 "category": "Программирование"
                },
@@ -240,7 +240,7 @@ export default class BookStoreService {
                 "title": "Философия Java. 4-е полное изд.",
                 "title_url": "https://www.bookvoed.ru/book?id=6153381",
                 "price": [
-                 "1 526 "
+                 "1525"
                 ],
                 "category": "Программирование"
                },
@@ -251,7 +251,7 @@ export default class BookStoreService {
                 "title": "Изучаем программирование на JavaScript",
                 "title_url": "https://www.bookvoed.ru/book?id=6163190",
                 "price": [
-                 "1 598 "
+                 "1595"
                 ],
                 "category": "Программирование"
                },
@@ -262,7 +262,7 @@ export default class BookStoreService {
                 "title": "Программирование на C# для начинающих. ",
                 "title_url": "https://www.bookvoed.ru/book?id=8623688",
                 "price": [
-                 "818 "
+                 "815"
                 ],
                 "category": "Программирование"
                },
@@ -273,7 +273,7 @@ export default class BookStoreService {
                 "title": "Алгоритмы. Руководство по разработке. — ",
                 "title_url": "https://www.bookvoed.ru/book?id=420144",
                 "price": [
-                 "1 027 "
+                 "1025"
                 ],
                 "category": "Программирование"
                },
@@ -284,7 +284,7 @@ export default class BookStoreService {
                 "title": "Python для сложных задач: наука о данных ",
                 "title_url": "https://www.bookvoed.ru/book?id=7626291",
                 "price": [
-                 "1 178 "
+                 "1175"
                 ],
                 "category": "Программирование"
                },
@@ -294,7 +294,7 @@ export default class BookStoreService {
                 "title": "Java Concurrency на практике",
                 "title_url": "https://www.bookvoed.ru/book?id=10395036",
                 "price": [
-                 "1 048 "
+                 "1045"
                 ],
                 "category": "Программирование"
                },
@@ -305,7 +305,7 @@ export default class BookStoreService {
                 "title": "Начинаем программировать на Python. 4-е ",
                 "title_url": "https://www.bookvoed.ru/book?id=9312920",
                 "price": [
-                 "1 415 "
+                 "1415 "
                 ],
                 "category": "Программирование"
                },
@@ -316,7 +316,7 @@ export default class BookStoreService {
                 "title": "Python 3. Самое необходимое. 2-е ",
                 "title_url": "https://www.bookvoed.ru/book?id=9312925",
                 "price": [
-                 "801 "
+                 "800"
                 ],
                 "category": "Программирование"
                },
@@ -327,7 +327,7 @@ export default class BookStoreService {
                 "title": "Python 3 и PyQt 5. Разработка приложений",
                 "title_url": "https://www.bookvoed.ru/book?id=6720516",
                 "price": [
-                 "1 210 "
+                 "1210"
                 ],
                 "category": "Программирование"
                },
@@ -338,7 +338,7 @@ export default class BookStoreService {
                 "title": "PHP 7",
                 "title_url": "https://www.bookvoed.ru/book?id=6816058",
                 "price": [
-                 "1 181 "
+                 "1180"
                 ],
                 "category": "Программирование"
                },
@@ -349,7 +349,7 @@ export default class BookStoreService {
                 "title": "Алгоритмы для начинающих. Теория и ",
                 "title_url": "https://www.bookvoed.ru/book?id=7944211",
                 "price": [
-                 "782 "
+                 "780"
                 ],
                 "category": "Программирование"
                },
@@ -360,7 +360,7 @@ export default class BookStoreService {
                 "title": "Программирование на Python для ",
                 "title_url": "https://www.bookvoed.ru/book?id=6523118",
                 "price": [
-                 "444 "
+                 "445"
                 ],
                 "category": "Программирование"
                },
@@ -371,7 +371,7 @@ export default class BookStoreService {
                 "title": "Java для чайников, 7-е издание",
                 "title_url": "https://www.bookvoed.ru/book?id=8144434",
                 "price": [
-                 "1 055 "
+                 "1055 "
                 ],
                 "category": "Программирование"
                },
@@ -382,7 +382,7 @@ export default class BookStoreService {
                 "title": "Чистый Python. Тонкости программирования ",
                 "title_url": "https://www.bookvoed.ru/book?id=8722984",
                 "price": [
-                 "1 012 "
+                 "1010"
                 ],
                 "category": "Программирование"
                },
@@ -393,7 +393,7 @@ export default class BookStoreService {
                 "title": "С++ для начинающих",
                 "title_url": "https://www.bookvoed.ru/book?id=3292414",
                 "price": [
-                 "756 "
+                 "755"
                 ],
                 "category": "Программирование"
                },
@@ -404,7 +404,7 @@ export default class BookStoreService {
                 "title": "Изучаем Python. Программирование игр, ",
                 "title_url": "https://www.bookvoed.ru/book?id=6901005",
                 "price": [
-                 "1 129 "
+                 "1125"
                 ],
                 "category": "Программирование"
                },
@@ -415,7 +415,7 @@ export default class BookStoreService {
                 "title": "CLR via C#. Программирование на ",
                 "title_url": "https://www.bookvoed.ru/book?id=2650996",
                 "price": [
-                 "1 376 "
+                 "1375"
                 ],
                 "category": "Программирование"
                },
@@ -426,7 +426,7 @@ export default class BookStoreService {
                 "title": "JavaScript и jQuery. Интерактивная ",
                 "title_url": "https://www.bookvoed.ru/book?id=7351276",
                 "price": [
-                 "1 425 "
+                 "1425 "
                 ],
                 "category": "Программирование"
                },
@@ -437,7 +437,7 @@ export default class BookStoreService {
                 "title": "Android. Программирование для ",
                 "title_url": "https://www.bookvoed.ru/book?id=7410909",
                 "price": [
-                 "1 142 "
+                 "1140"
                 ],
                 "category": "Программирование"
                },
@@ -448,7 +448,7 @@ export default class BookStoreService {
                 "title": "Психбольница в руках пациентов. Алан ",
                 "title_url": "https://www.bookvoed.ru/book?id=8146629",
                 "price": [
-                 "1 047 "
+                 "1045"
                 ],
                 "category": "Программирование"
                },
@@ -459,7 +459,7 @@ export default class BookStoreService {
                 "title": "Глубокое обучение на Python",
                 "title_url": "https://www.bookvoed.ru/book?id=8556545",
                 "price": [
-                 "918 "
+                 "915"
                 ],
                 "category": "Программирование"
                },
@@ -470,7 +470,7 @@ export default class BookStoreService {
                 "title": "Библия C#. 4-е изд.",
                 "title_url": "https://www.bookvoed.ru/book?id=10305049",
                 "price": [
-                 "647 "
+                 "645"
                 ],
                 "category": "Программирование"
                },
@@ -481,7 +481,7 @@ export default class BookStoreService {
                 "title": "HTML и CSS. Разработка и дизайн ",
                 "title_url": "https://www.bookvoed.ru/book?id=2661425",
                 "price": [
-                 "1 195 "
+                 "1195 "
                 ],
                 "category": "Программирование"
                },
@@ -492,7 +492,7 @@ export default class BookStoreService {
                 "title": "Изучаем C++ через программирование игр",
                 "title_url": "https://www.bookvoed.ru/book?id=6511021",
                 "price": [
-                 "624 "
+                 "625"
                 ],
                 "category": "Программирование"
                },
@@ -503,7 +503,7 @@ export default class BookStoreService {
                 "title": "В подлиннике. Qt 5.10. Профессиональное ",
                 "title_url": "https://www.bookvoed.ru/book?id=8554432",
                 "price": [
-                 "1 484 "
+                 "1485"
                 ],
                 "category": "Программирование"
                },
@@ -514,7 +514,7 @@ export default class BookStoreService {
                 "title": "Эволюционная архитектура. Поддержка ",
                 "title_url": "https://www.bookvoed.ru/book?id=9078919",
                 "price": [
-                 "822 "
+                 "820"
                 ],
                 "category": "Программирование"
                },
@@ -525,7 +525,7 @@ export default class BookStoreService {
                 "title": "Python. Экспресс-курс. 3-е издание",
                 "title_url": "https://www.bookvoed.ru/book?id=9254194",
                 "price": [
-                 "826 "
+                 "825"
                 ],
                 "category": "Программирование"
                },
@@ -536,7 +536,7 @@ export default class BookStoreService {
                 "title": "PostgreSQL Основы языка SQL : учебное ",
                 "title_url": "https://www.bookvoed.ru/book?id=9312923",
                 "price": [
-                 "731 "
+                 "730"
                 ],
                 "category": "Программирование"
                },
@@ -547,7 +547,7 @@ export default class BookStoreService {
                 "title": "Язык программирования С++. Спец.издание",
                 "title_url": "https://www.bookvoed.ru/book?id=9647270",
                 "price": [
-                 "1 386 "
+                 "1385"
                 ],
                 "category": "Программирование"
                },
@@ -558,7 +558,7 @@ export default class BookStoreService {
                 "title": "Выразительный JavaScript. Современное ",
                 "title_url": "https://www.bookvoed.ru/book?id=10081480",
                 "price": [
-                 "1 355 "
+                 "1355 "
                 ],
                 "category": "Программирование"
                },
@@ -569,7 +569,7 @@ export default class BookStoreService {
                 "title": "Программист-фанатик",
                 "title_url": "https://www.bookvoed.ru/book?id=6162653",
                 "price": [
-                 "513 "
+                 "512"
                 ],
                 "category": "Программирование"
                },
@@ -580,7 +580,7 @@ export default class BookStoreService {
                 "title": "JavaScript и jQuery. Исчерпывающее ",
                 "title_url": "https://www.bookvoed.ru/book?id=6509263",
                 "price": [
-                 "1 042 "
+                 "1040"
                 ],
                 "category": "Программирование"
                },
@@ -591,7 +591,7 @@ export default class BookStoreService {
                 "title": "С++17 STL. Стандартная библиотека ",
                 "title_url": "https://www.bookvoed.ru/book?id=8504981",
                 "price": [
-                 "1 255 "
+                 "1255 "
                 ],
                 "category": "Программирование"
                },
@@ -602,7 +602,7 @@ export default class BookStoreService {
                 "title": "Легкий способ выучить Java",
                 "title_url": "https://www.bookvoed.ru/book?id=9878856",
                 "price": [
-                 "760 "
+                 "760"
                 ],
                 "category": "Программирование"
                },
@@ -624,7 +624,7 @@ export default class BookStoreService {
                 "title": "C# для чайников",
                 "title_url": "https://www.bookvoed.ru/book?id=10088836",
                 "price": [
-                 "949 "
+                 "945"
                 ],
                 "category": "Программирование"
                },
@@ -635,7 +635,7 @@ export default class BookStoreService {
                 "title": "Java для всех",
                 "title_url": "https://www.bookvoed.ru/book?id=10198227",
                 "price": [
-                 "720 "
+                 "720"
                 ],
                 "category": "Программирование"
                },
@@ -646,7 +646,7 @@ export default class BookStoreService {
                 "title": "C++ за 21 день",
                 "title_url": "https://www.bookvoed.ru/book?id=10212383",
                 "price": [
-                 "1 266 "
+                 "1266"
                 ],
                 "category": "Программирование"
                },
@@ -657,7 +657,7 @@ export default class BookStoreService {
                 "title": "Git для профессионального программиста ",
                 "title_url": "https://www.bookvoed.ru/book?id=6510847",
                 "price": [
-                 "960 "
+                 "960"
                 ],
                 "category": "Программирование"
                },
