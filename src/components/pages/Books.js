@@ -3,10 +3,11 @@ import BookList from "../book-list"
 import Categories from "../categories"
 
  const Books = () => {
+    const category = "Программирование"
     return (
         <div>
             <Categories />
-            <BookList />
+            <BookList category={category}/>
         </div>
     )
 }
