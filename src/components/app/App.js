@@ -13,7 +13,7 @@ const App = () => {
     return (
 
         <>
-        <main role="main" className="container ">
+        <main role="main" className="container d-flex flex-column justify-content-start p-0" style={{height:"100vh"}}>
             <ShopHeader numItems={3} total={2518} />
 
             <Switch>

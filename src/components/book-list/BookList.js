@@ -15,7 +15,7 @@ import ErrorIndicator from '../error-indicator'
 const BookList = ({ books, onAddedToCart }) => {
 
     return (
-        <ul className="book-list mt-4">
+        <ul className="book-list p-0 mt-4">
             {
                 books.map(book => {
                     return (

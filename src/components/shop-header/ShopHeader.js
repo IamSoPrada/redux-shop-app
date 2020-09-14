@@ -13,7 +13,7 @@ const ShopHeader = ({items}) => {
 
     return (
 
-        <header className="shop-header row">
+        <div className="shop-header">
             <Link to="/">
                 <div className="logo text-dark" href="#">Frontend Library</div>
             </Link>
@@ -37,7 +37,7 @@ const ShopHeader = ({items}) => {
                 </Link>
 
             </div>
-        </header>
+        </div>
     )
 }
 
