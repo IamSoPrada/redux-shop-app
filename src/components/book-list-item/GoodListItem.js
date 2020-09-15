@@ -1,8 +1,8 @@
 import React from 'react'
-import "./BookListItem.css"
+import "./GoodListItem.css"
 
 
-const BookListItem = ({ book, onAddedToCart }) => {
+const GoodListItem = ({ book, onAddedToCart }) => {
     const { title, author, price, coverImage,  } = book;
     return (
         <div className="book-list-item">
@@ -27,4 +27,4 @@ const BookListItem = ({ book, onAddedToCart }) => {
         </div>
     )
 }
-export default BookListItem;
+export default GoodListItem;

@@ -1,34 +1,34 @@
- const updateBookList = (state, action) => {
+ const updateGoodList = (state, action) => {
     if (state === undefined) {
         return {
-            books: [],
+            goods: [],
             loading: true,
             error: null,
         }
     }
     switch (action.type) {
-        case 'FETCH_BOOKS_REQUEST':
+        case 'FETCH_goods_REQUEST':
             return {
-                books: [],
+                goods: [],
                 loading: true,
                 error: null
             }
 
-        case 'FETCH_BOOKS_SUCCESS':
+        case 'FETCH_goods_SUCCESS':
             return {
-                books: action.payload,
+                goods: action.payload,
                 loading: false,
                 error: null
             }
-        case 'FETCH_BOOKS_FAILURE':
+        case 'FETCH_goods_FAILURE':
             return {
-                books: [],
+                goods: [],
                 loading: false,
                 error: action.payload
             }
         default:
-            return state.bookList
+            return state.GoodList
     }
 }
 
-export default updateBookList;
+export default updateGoodList;

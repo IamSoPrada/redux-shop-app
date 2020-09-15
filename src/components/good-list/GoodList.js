@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
-import BookListItem from "../book-list-item"
+import GoodListItem from "../book-list-item"
 import Spinner from "../spinner"
 import { connect } from "react-redux"
 
 import { WithBookStoreService } from "../hoc"
 import { fetchBooks, bookAddedToCart, fetchGifts } from "../../actions"
 import { compose } from "../../utils"
-import "./BookList.css"
+import "./GoodList.css"
 import ErrorIndicator from '../error-indicator'
 
 
 
 
-const BookList = ({ books, onAddedToCart, category }) => {
+const GoodList = ({ books, onAddedToCart, category }) => {
 
     return (
         <ul className="book-list p-0 mt-4">
@@ -20,7 +20,7 @@ const BookList = ({ books, onAddedToCart, category }) => {
                 books.map(book => {
                     if(book.category === category){
                         return (
-                            <li key={book.id}> <BookListItem book={book}
+                            <li key={book.id}> <GoodListItem book={book}
                                 onAddedToCart={() => onAddedToCart(book.id)} /></li>
                         )
                     } else {
@@ -33,7 +33,7 @@ const BookList = ({ books, onAddedToCart, category }) => {
 
     )
 }
-class BookListContainer extends Component {
+class GoodListContainer extends Component {
 
 
     componentDidMount() {
@@ -49,12 +49,12 @@ class BookListContainer extends Component {
         if (error) {
             return <ErrorIndicator />
         }
-        return <BookList category={category} books={books} onAddedToCart ={onAddedToCart }/>
+        return <GoodList category={category} books={books} onAddedToCart ={onAddedToCart }/>
     }
 }
 
 
-const mapStateToProps = ({bookList:{ books, loading, error }}) => {
+const mapStateToProps = ({GoodList:{ books, loading, error }}) => {
     return { books, loading, error }
 }
 
@@ -68,5 +68,5 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 export default compose(
     WithBookStoreService(),
-    connect(mapStateToProps, mapDispatchToProps))(BookListContainer)
+    connect(mapStateToProps, mapDispatchToProps))(GoodListContainer)
 

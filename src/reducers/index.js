@@ -1,11 +1,11 @@
-import updateBookList from "./BookList"
+import updateGoodList from "./GoodList"
 import updateShoppingCart from "./ShoppingCart"
 
 
 const reducer = (state, action) => {
 
     return {
-        bookList: updateBookList(state, action),
+        GoodList: updateGoodList(state, action),
         shoppingCart: updateShoppingCart(state, action)
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import BookList from "../book-list"
+import GoodList from "../good-list"
 import Categories from "../categories"
 
  const Books = () => {
@@ -7,7 +7,7 @@ import Categories from "../categories"
     return (
         <div>
             <Categories />
-            <BookList category={category}/>
+            <GoodList category={category}/>
         </div>
     )
 }
