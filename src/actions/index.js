@@ -1,37 +1,37 @@
-const booksLoaded = (newBooks) => {
+const goodsLoaded = (newGoods) => {
     return {
-        type: 'FETCH_BOOKS_SUCCESS',
-        payload: newBooks
+        type: 'FETCH_GOODS_SUCCESS',
+        payload: newGoods
     }
 }
-const booksRequested = () =>{
+const goodsRequested = () =>{
     return {
-        type: 'FETCH_BOOKS_REQUEST'
+        type: 'FETCH_GOODS_REQUEST'
     }
 }
-const booksError = (error) => {
+const goodsError = (error) => {
     return {
-        type: 'FETCH_BOOKS_FAILURE',
+        type: 'FETCH_GOODS_FAILURE',
         payload: error
     }
 }
 
-export const bookAddedToCart = (bookId) => {
+export const goodAddedToCart = (goodId) => {
     return {
-        type: 'BOOK_ADDED_TO_CART',
-        payload: bookId
+        type: 'GOOD_ADDED_TO_CART',
+        payload: goodId
     }
 }
-export const bookRemovedFromCart = (bookId) => {
+export const goodRemovedFromCart = (goodId) => {
     return {
-        type: 'BOOK_REMOVED_FROM_CART',
-        payload: bookId
+        type: 'GOOD_REMOVED_FROM_CART',
+        payload: goodId
     }
 }
-export const allBooksRemovedFromCart = (bookId) => {
+export const allGoodsRemovedFromCart = (goodId) => {
     return {
-        type: 'ALL_BOOKS_REMOVED_FROM_CART',
-        payload: bookId
+        type: 'ALL_GOODS_REMOVED_FROM_CART',
+        payload: goodId
     }
 }
 
@@ -42,21 +42,21 @@ export const totalReducer = (current) => {
 }
 
 
-const fetchBooks = (bookStoreService, dispatch) => () => {
-    dispatch(booksRequested())
-    bookStoreService.getBooks()
-        .then((data) => dispatch(booksLoaded(data)))
-        .catch((err) => booksError(err))
+const fetchGoods = (goodStoreService, dispatch) => () => {
+    dispatch(goodsRequested())
+    goodStoreService.getGoods()
+        .then((data) => dispatch(goodsLoaded(data)))
+        .catch((err) => goodsError(err))
 }
 
-const fetchGifts = (bookStoreService, dispatch) => () => {
-    dispatch(booksRequested())
-    bookStoreService.getGifts()
-        .then((data) => dispatch(booksLoaded(data)))
-        .catch((err) => booksError(err))
+const fetchGifts = (goodStoreService, dispatch) => () => {
+    dispatch(goodsRequested())
+    goodStoreService.getGifts()
+        .then((data) => dispatch(goodsLoaded(data)))
+        .catch((err) => goodsError(err))
 }
 
 export {
-    fetchBooks,
+    fetchGoods,
     fetchGifts
 }

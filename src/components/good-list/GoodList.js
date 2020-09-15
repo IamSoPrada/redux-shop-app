@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import GoodListItem from "../book-list-item"
+import GoodListItem from "../good-list-item"
 import Spinner from "../spinner"
 import { connect } from "react-redux"
 
-import { WithBookStoreService } from "../hoc"
-import { fetchBooks, bookAddedToCart, fetchGifts } from "../../actions"
+import { WithGoodStoreService } from "../hoc"
+import { fetchGoods, goodAddedToCart, fetchGifts } from "../../actions"
 import { compose } from "../../utils"
 import "./GoodList.css"
 import ErrorIndicator from '../error-indicator'
@@ -12,16 +12,16 @@ import ErrorIndicator from '../error-indicator'
 
 
 
-const GoodList = ({ books, onAddedToCart, category }) => {
+const GoodList = ({ goods, onAddedToCart, category }) => {
 
     return (
-        <ul className="book-list p-0 mt-4">
+        <ul className="good-list p-0 mt-4">
             {
-                books.map(book => {
-                    if(book.category === category){
+                goods.map(good => {
+                    if(good.category === category){
                         return (
-                            <li key={book.id}> <GoodListItem book={book}
-                                onAddedToCart={() => onAddedToCart(book.id)} /></li>
+                            <li key={good.id}> <GoodListItem good={good}
+                                onAddedToCart={() => onAddedToCart(good.id)} /></li>
                         )
                     } else {
                         return null
@@ -37,11 +37,11 @@ class GoodListContainer extends Component {
 
 
     componentDidMount() {
-        this.props.fetchBooks()
+        this.props.fetchGoods()
     }
 
     render() {
-        const { books, loading, error, onAddedToCart, category } = this.props
+        const { goods, loading, error, onAddedToCart, category } = this.props
 
         if (loading) {
             return <Spinner />
@@ -49,24 +49,24 @@ class GoodListContainer extends Component {
         if (error) {
             return <ErrorIndicator />
         }
-        return <GoodList category={category} books={books} onAddedToCart ={onAddedToCart }/>
+        return <GoodList category={category} goods={goods} onAddedToCart ={onAddedToCart }/>
     }
 }
 
 
-const mapStateToProps = ({GoodList:{ books, loading, error }}) => {
-    return { books, loading, error }
+const mapStateToProps = ({GoodList:{ goods, loading, error }}) => {
+    return { goods, loading, error }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-    const { bookStoreService } = ownProps;
+    const { goodStoreService } = ownProps;
     return {
-        fetchBooks: fetchBooks(bookStoreService, dispatch),
-        fetchGifts: fetchGifts(bookStoreService, dispatch),
-        onAddedToCart: (id) => dispatch(bookAddedToCart(id))
+        fetchGoods: fetchGoods(goodStoreService, dispatch),
+        fetchGifts: fetchGifts(goodStoreService, dispatch),
+        onAddedToCart: (id) => dispatch(goodAddedToCart(id))
     }
 }
 export default compose(
-    WithBookStoreService(),
+    WithGoodStoreService(),
     connect(mapStateToProps, mapDispatchToProps))(GoodListContainer)
 

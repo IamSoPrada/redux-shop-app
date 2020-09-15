@@ -2,19 +2,19 @@ import React from 'react'
 import "./GoodListItem.css"
 
 
-const GoodListItem = ({ book, onAddedToCart }) => {
-    const { title, author, price, coverImage,  } = book;
+const GoodListItem = ({ good, onAddedToCart }) => {
+    const { title, author, price, coverImage,  } = good;
     return (
-        <div className="book-list-item">
+        <div className="good-list-item">
 
-            <div className="book-cover">
+            <div className="good-cover">
                 <img src={coverImage} alt="cover"/>
             </div>
 
-            <div className="book-details">
-                <span href="#" className="book-title">{title}</span>
-                <div className="book-author">{author}</div>
-                <div className="book-price">{price} руб.</div>
+            <div className="good-details">
+                <span href="#" className="good-title">{title}</span>
+                <div className="good-author">{author}</div>
+                <div className="good-price">{price} руб.</div>
                 <button
                 onClick={onAddedToCart} 
                 className="btn btn-success mt-3 add-to-cart">Добавить</button>

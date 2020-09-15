@@ -5,21 +5,21 @@ import { BrowserRouter as Router } from "react-router-dom"
 
 import App from "./components/app"
 import ErrorBoundry from "./components/error-boundry"
-import BookStoreService from "./services/bookstore-service"
-import { BookStoreServiceProvider } from "./components/bookstore-service-context"
+import GoodStoreService from "./services/goodstore-service"
+import { GoodStoreServiceProvider } from "./components/goodstore-service-context"
 
 import store from "./store"
 
-const bookstoreService = new BookStoreService();
+const goodstoreService = new GoodStoreService();
 
 ReactDOM.render(
     <Provider store={store}>
         <ErrorBoundry>
-            <BookStoreServiceProvider value={bookstoreService}>
+            <GoodStoreServiceProvider value={goodstoreService}>
                 <Router>
                     <App />
                 </Router>
-            </BookStoreServiceProvider>
+            </GoodStoreServiceProvider>
         </ErrorBoundry>
     </Provider>,
     document.getElementById("root")

@@ -1,4 +1,4 @@
-import WithBookStoreService from "./WIthBookStoreService"
+import WithGoodStoreService from "./WIthGoodStoreService"
 export {
-    WithBookStoreService
+    WithGoodStoreService
 }

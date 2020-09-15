@@ -7,20 +7,20 @@
         }
     }
     switch (action.type) {
-        case 'FETCH_goods_REQUEST':
+        case 'FETCH_GOODS_REQUEST':
             return {
                 goods: [],
                 loading: true,
                 error: null
             }
 
-        case 'FETCH_goods_SUCCESS':
+        case 'FETCH_GOODS_SUCCESS':
             return {
                 goods: action.payload,
                 loading: false,
                 error: null
             }
-        case 'FETCH_goods_FAILURE':
+        case 'FETCH_GOODS_FAILURE':
             return {
                 goods: [],
                 loading: false,

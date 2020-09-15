@@ -1,4 +1,4 @@
-export default class BookStoreService {
+export default class GoodStoreService {
     data = 
         [
         
@@ -1268,7 +1268,7 @@ export default class BookStoreService {
        ]
     
 
-    getBooks() {
+    getGoods() {
         return new Promise ((resolve, reject) => {
             setTimeout(() => {
                 resolve(this.data)
