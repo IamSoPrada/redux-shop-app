@@ -4,7 +4,7 @@ import Spinner from "../spinner"
 import { connect } from "react-redux"
 
 import { WithGoodStoreService } from "../hoc"
-import { fetchGoods, goodAddedToCart, fetchGifts } from "../../actions"
+import { fetchGoods, goodAddedToCart, goodAddedToWishList} from "../../actions"
 import { compose } from "../../utils"
 import "./GoodList.css"
 import ErrorIndicator from '../error-indicator'
@@ -12,7 +12,7 @@ import ErrorIndicator from '../error-indicator'
 
 
 
-const GoodList = ({ goods, onAddedToCart, category }) => {
+const GoodList = ({ goods, onAddedToCart, onAddedToWishList, category }) => {
 
     return (
         <ul className="good-list p-0 mt-4">
@@ -21,7 +21,8 @@ const GoodList = ({ goods, onAddedToCart, category }) => {
                     if(good.category === category){
                         return (
                             <li key={good.id}> <GoodListItem good={good}
-                                onAddedToCart={() => onAddedToCart(good.id)} /></li>
+                                onAddedToCart={() => onAddedToCart(good.id)} 
+                                onAddedToWishList={()=> onAddedToWishList(good.id)}/></li>
                         )
                     } else {
                         return null
@@ -41,7 +42,7 @@ class GoodListContainer extends Component {
     }
 
     render() {
-        const { goods, loading, error, onAddedToCart, category } = this.props
+        const { goods, loading, error, onAddedToCart, onAddedToWishList,category } = this.props
 
         if (loading) {
             return <Spinner />
@@ -49,7 +50,7 @@ class GoodListContainer extends Component {
         if (error) {
             return <ErrorIndicator />
         }
-        return <GoodList category={category} goods={goods} onAddedToCart ={onAddedToCart }/>
+        return <GoodList category={category} goods={goods} onAddedToWishList={onAddedToWishList} onAddedToCart ={onAddedToCart }/>
     }
 }
 
@@ -62,8 +63,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     const { goodStoreService } = ownProps;
     return {
         fetchGoods: fetchGoods(goodStoreService, dispatch),
-        fetchGifts: fetchGifts(goodStoreService, dispatch),
-        onAddedToCart: (id) => dispatch(goodAddedToCart(id))
+        onAddedToCart: (id) => dispatch(goodAddedToCart(id)),
+        onAddedToWishList: (id) => dispatch(goodAddedToWishList(id))
     }
 }
 export default compose(

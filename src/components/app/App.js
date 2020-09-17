@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom"
 import ShopHeader from "../shop-header"
 import Footer from '../footer'
 import Login from '../login'
-import { HomePage, CardPage, Books, Gifts } from "../pages"
+import { HomePage, CardPage, Books, Gifts, WishList } from "../pages"
 
 import "./App.css"
 
@@ -31,6 +31,9 @@ const App = () => {
                 />
                 <Route path="/gifts"
                     component={Gifts}
+                />
+                <Route path="/wishlist"
+                    component={WishList}
                 />
             </Switch>
         </main>

@@ -22,6 +22,20 @@ export const goodAddedToCart = (goodId) => {
         payload: goodId
     }
 }
+
+export const goodAddedToWishList = (goodId) => {
+    return {
+        type: 'GOOD_ADDED_TO_WISHLIST',
+        payload: goodId
+    }
+}
+export const goodRemovedFromWishList = (goodId) => {
+    return {
+        type: 'GOOD_REMOVED_FROM_WISHLIST',
+        payload: goodId
+    }
+}
+
 export const goodRemovedFromCart = (goodId) => {
     return {
         type: 'GOOD_REMOVED_FROM_CART',
@@ -49,14 +63,7 @@ const fetchGoods = (goodStoreService, dispatch) => () => {
         .catch((err) => goodsError(err))
 }
 
-const fetchGifts = (goodStoreService, dispatch) => () => {
-    dispatch(goodsRequested())
-    goodStoreService.getGifts()
-        .then((data) => dispatch(goodsLoaded(data)))
-        .catch((err) => goodsError(err))
-}
 
 export {
-    fetchGoods,
-    fetchGifts
+    fetchGoods
 }

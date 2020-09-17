@@ -1,9 +1,9 @@
 import React from 'react'
-import "./GoodListItem.css"
+import {goodRemovedFromWishList} from "../../actions"
+import { connect } from "react-redux"
 
 
-const GoodListItem = ({ good, onAddedToCart, onAddedToWishList }) => {
-    const { title, author, price, coverImage,  } = good;
+const WishList = ({onRemovedFromWishList, coverImage, title, author, price}) => {
     return (
         <div className="good-list-item">
 
@@ -16,16 +16,26 @@ const GoodListItem = ({ good, onAddedToCart, onAddedToWishList }) => {
                 <div className="good-author">{author}</div>
                 <div className="good-price">{price} руб.</div>
                 <button
-                onClick={onAddedToCart} 
-                className="btn btn-success mt-3 add-to-cart">Добавить</button>
-                <button
-                onClick ={onAddedToWishList}
+                onClick ={onRemovedFromWishList}
                 className="btn btn-outline-danger btn-sm mt-1 float-center">
-                <i className="fa fa-star" />
+                <i className="fa fa-trash" />
                 </button>
             </div>
 
         </div>
     )
 }
-export default GoodListItem;
+
+
+
+const mapStateToProps = () => {
+    return {
+
+    }
+}
+
+const mapDispatchToProps =  {
+   onRemovedFromWishList: goodRemovedFromWishList
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(WishList)
