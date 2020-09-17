@@ -38,7 +38,7 @@ const WishList = ({items, onRemovedFromWishList}) => {
 
     return (
         <>
-
+        <h3>Список желаний: </h3>
         <ul className="good-list p-0 mt-4">
         {
             items.map(item => {
@@ -52,12 +52,12 @@ const WishList = ({items, onRemovedFromWishList}) => {
             
         }
         </ul>
-        <h3 className="total mt-5">
+        <h4 className="total mt-5">
         Итог: {totalReducer(currentTotal)} руб.
-        </h3>
+        </h4>
         <div className="good-details mt-3">
             <button className="btn btn-danger">Очистить список</button>
-            <button className="btn btn-success ml-5">В корзину</button>
+            <button className="btn btn-success ml-4">В корзину</button>
         </div>
 
         </>

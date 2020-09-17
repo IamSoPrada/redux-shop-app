@@ -61,6 +61,7 @@ const ShoppingCartTable = ({ items, onIncrease, onDecrease, onDelete }) => {
             <div className="total">
                 Итог: {totalReducer(currentTotal)} руб.
             </div>
+            <button className="btn btn-success">Заказать</button>
 
         </div>
     )
