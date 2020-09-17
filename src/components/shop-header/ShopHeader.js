@@ -26,7 +26,7 @@ const ShopHeader = ({items}) => {
                 </Link>
                 <Link to ="/wishlist">
                     <div className="shopping-cart">
-                    <i class="fa fa-heart cart-icon" />
+                    <i class="fa fa-star cart-icon" />
                     </div>
                 </Link>
                 <Link to="/cart">
