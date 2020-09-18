@@ -33,7 +33,7 @@ const updateCartItem = (good, item = {}, quantity) => {
 }
 
 const updateOrder = (state, goodId, quantity) => {
-    const { GoodList: { goods }, shoppingCart: { cartItems }, WishList : {wishItems} } = state
+    const { GoodList: { goods }, shoppingCart: { cartItems }/* , WishList : {wishItems}  */} = state
     const good = goods.find(({ id }) => id === goodId)
     const itemIndex = cartItems.findIndex(({ id }) => id === goodId)
     const item = cartItems[itemIndex]
@@ -47,11 +47,11 @@ const updateOrder = (state, goodId, quantity) => {
 
 }
 
-const itemsFromWishList = (state) => {
+/* const itemsFromWishList = (state) => {
     return {
         cartItems : state.WishList.wishItems
     }
-}
+} */
 
 const updateShoppingCart = (state, action) => {
     if (state === undefined) {
