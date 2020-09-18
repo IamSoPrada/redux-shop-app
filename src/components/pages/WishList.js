@@ -2,7 +2,7 @@ import React from 'react'
 import {goodRemovedFromWishList, allGoodsRemovedFromWishList, allGoodsFromWishListAddedToCart, totalReducer} from "../../actions"
 import { connect } from "react-redux"
 
-import Button from '@material-ui/core/Button';
+
 
 
 const WishList = ({items, onRemovedFromWishList, onDeleteAll, onAddAllToCart}) => {
@@ -24,11 +24,11 @@ const WishList = ({items, onRemovedFromWishList, onDeleteAll, onAddAllToCart}) =
                 <div className="good-author">{author}</div>
                 <div className="good-price">{price} руб.</div>
                 <div className="good-price">Кол-во: {count} </div>
-                <Button
+                <button
                 onClick ={onRemovedFromWishList}
                 className="btn btn-outline-danger btn-sm mt-1 float-center">
                 <i className="fa fa-trash" />
-                </Button>
+                </button>
             </div>
             
 
@@ -59,12 +59,12 @@ const WishList = ({items, onRemovedFromWishList, onDeleteAll, onAddAllToCart}) =
        
         </h4>
         <div className="good-details mt-3">
-            <Button
+            <button
             onClick ={()=> onDeleteAll()}
-             className="btn btn-danger">Очистить список</Button>
-            <Button
+             className="btn btn-danger">Очистить список</button>
+            <button
             onClick ={()=> onAddAllToCart()} 
-            className="btn btn-success ml-4">В корзину</Button>
+            className="btn btn-success ml-4">В корзину</button>
         </div>
 
         </>
