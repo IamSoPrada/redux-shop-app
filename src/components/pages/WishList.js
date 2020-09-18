@@ -1,9 +1,11 @@
 import React from 'react'
-import {goodRemovedFromWishList, totalReducer} from "../../actions"
+import {goodRemovedFromWishList, allGoodsRemovedFromWishList, allGoodsFromWishListAddedToCart, totalReducer} from "../../actions"
 import { connect } from "react-redux"
 
+import Button from '@material-ui/core/Button';
 
-const WishList = ({items, onRemovedFromWishList}) => {
+
+const WishList = ({items, onRemovedFromWishList, onDeleteAll, onAddAllToCart}) => {
 
     const WishListItem = ({onRemovedFromWishList, item}) => {
 
@@ -22,11 +24,11 @@ const WishList = ({items, onRemovedFromWishList}) => {
                 <div className="good-author">{author}</div>
                 <div className="good-price">{price} руб.</div>
                 <div className="good-price">Кол-во: {count} </div>
-                <button
+                <Button
                 onClick ={onRemovedFromWishList}
                 className="btn btn-outline-danger btn-sm mt-1 float-center">
                 <i className="fa fa-trash" />
-                </button>
+                </Button>
             </div>
             
 
@@ -35,7 +37,7 @@ const WishList = ({items, onRemovedFromWishList}) => {
     }
 
     let currentTotal = items.map(item=> item.total)
-
+    
     return (
         <>
         <h3>Список желаний: </h3>
@@ -54,10 +56,15 @@ const WishList = ({items, onRemovedFromWishList}) => {
         </ul>
         <h4 className="total mt-5">
         Итог: {totalReducer(currentTotal)} руб.
+       
         </h4>
         <div className="good-details mt-3">
-            <button className="btn btn-danger">Очистить список</button>
-            <button className="btn btn-success ml-4">В корзину</button>
+            <Button
+            onClick ={()=> onDeleteAll()}
+             className="btn btn-danger">Очистить список</Button>
+            <Button
+            onClick ={()=> onAddAllToCart()} 
+            className="btn btn-success ml-4">В корзину</Button>
         </div>
 
         </>
@@ -73,7 +80,9 @@ const mapStateToProps = ({WishList: {wishItems}}) => {
 }
 
 const mapDispatchToProps =  {
-   onRemovedFromWishList: goodRemovedFromWishList
+   onRemovedFromWishList: goodRemovedFromWishList,
+   onDeleteAll: allGoodsRemovedFromWishList,
+    onAddAllToCart : allGoodsFromWishListAddedToCart
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(WishList)

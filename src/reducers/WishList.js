@@ -36,7 +36,7 @@ const updateCartItem = (good, item = {}, quantity) => {
 }
 
 const updateOrder = (state, goodId, quantity) => {
-    const { GoodList: { goods }, WishList: { wishItems } } = state
+    const { GoodList: { goods }, WishList: { wishItems }} = state
     const good = goods.find(({ id }) => id === goodId)
     const itemIndex = wishItems.findIndex(({ id }) => id === goodId)
     const item = wishItems[itemIndex]
@@ -49,7 +49,9 @@ const updateOrder = (state, goodId, quantity) => {
     }
 
 }
-
+const clearedState = {
+    wishItems:[]
+}
 
 const updateWishList = (state, action) => {
 
@@ -64,6 +66,8 @@ switch(action.type){
         return updateOrder(state, action.payload, 1)
     case 'GOOD_REMOVED_FROM_WISHLIST':
         return updateOrder(state, action.payload, -1)
+    case 'ALL_GOODS_REMOVED_FROM_WISHLIST':
+        return clearedState
     default:
         return state.WishList
 }

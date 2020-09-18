@@ -1,5 +1,6 @@
 import React from 'react'
 import "./GoodListItem.css"
+import Button from '@material-ui/core/Button';
 
 
 const GoodListItem = ({ good, onAddedToCart, onAddedToWishList }) => {
@@ -15,14 +16,14 @@ const GoodListItem = ({ good, onAddedToCart, onAddedToWishList }) => {
                 <span href="#" className="good-title">{title}</span>
                 <div className="good-author">{author}</div>
                 <div className="good-price">{price} руб.</div>
-                <button
+                <Button
                 onClick={onAddedToCart} 
-                className="btn btn-success mt-3 add-to-cart">Добавить</button>
-                <button
+                className="btn btn-success mt-3 add-to-cart">Добавить</Button>
+                <Button
                 onClick ={onAddedToWishList}
                 className="btn btn-outline-danger btn-sm mt-1 float-center">
                 <i className="fa fa-star" />
-                </button>
+                </Button>
             </div>
 
         </div>

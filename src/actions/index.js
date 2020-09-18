@@ -48,6 +48,19 @@ export const allGoodsRemovedFromCart = (goodId) => {
         payload: goodId
     }
 }
+export const allGoodsRemovedFromWishList = (goodId) => {
+    return {
+        type: 'ALL_GOODS_REMOVED_FROM_WISHLIST',
+        payload: goodId
+    }
+}
+
+export const allGoodsFromWishListAddedToCart = (wishedItems) => {
+    return {
+        type: 'ALL_GOODS_FROM_WISHLIST_ADDED_TO_CART',
+        payload: wishedItems
+    }
+}
 
 export const totalReducer = (current) => {
     let reducer = (accumulator, current) => accumulator + current
