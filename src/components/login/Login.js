@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+/* import {Link} from "react-router-dom" */
 import "./Login.css"
 
  const Login = () => {
@@ -18,9 +18,9 @@ import "./Login.css"
                     </label>
                 </div>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
-                <Link to="/signup">
+{/*                 <Link to="/signup">
                     <button class="btn btn-lg btn-default btn-block">Зарегистрироваться</button>
-                </Link>
+                </Link> */}
                 
         </form>
     </div>

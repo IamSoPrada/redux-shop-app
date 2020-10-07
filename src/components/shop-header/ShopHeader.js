@@ -2,7 +2,7 @@ import React from 'react'
 import "./ShopHeader.css"
 import { Link } from "react-router-dom"
 import { connect } from "react-redux"
-import {totalReducer} from "../../actions"
+import {totalReducer} from "../../actions/goods"
 
 const ShopHeader = ({items}) => {
 
@@ -21,12 +21,12 @@ const ShopHeader = ({items}) => {
             <div className="row">
                 <Link to ="/login">
                     <div className="shopping-cart">
-                        <i class="cart-icon fa fa-user" />
+                        <i className="cart-icon fa fa-user" />
                     </div>
                 </Link>
                 <Link to ="/wishlist">
                     <div className="shopping-cart">
-                    <i class="fa fa-star cart-icon" />
+                    <i className="fa fa-star cart-icon" />
                     </div>
                 </Link>
                 <Link to="/cart">

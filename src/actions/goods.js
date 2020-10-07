@@ -1,63 +1,77 @@
+import {
+    FETCH_GOODS_SUCCESS,
+    FETCH_GOODS_REQUEST,
+    FETCH_GOODS_FAILURE,
+    GOOD_ADDED_TO_CART,
+    GOOD_ADDED_TO_WISHLIST,
+    GOOD_REMOVED_FROM_WISHLIST,
+    GOOD_REMOVED_FROM_CART,
+    ALL_GOODS_REMOVED_FROM_CART,
+    ALL_GOODS_REMOVED_FROM_WISHLIST,
+    ALL_GOODS_FROM_WISHLIST_ADDED_TO_CART
+} from "./types"
+
+
 const goodsLoaded = (newGoods) => {
     return {
-        type: 'FETCH_GOODS_SUCCESS',
+        type: FETCH_GOODS_SUCCESS,
         payload: newGoods
     }
 }
-const goodsRequested = () =>{
+const goodsRequested = () => {
     return {
-        type: 'FETCH_GOODS_REQUEST'
+        type: FETCH_GOODS_REQUEST
     }
 }
 const goodsError = (error) => {
     return {
-        type: 'FETCH_GOODS_FAILURE',
+        type: FETCH_GOODS_FAILURE,
         payload: error
     }
 }
 
 export const goodAddedToCart = (goodId) => {
     return {
-        type: 'GOOD_ADDED_TO_CART',
+        type: GOOD_ADDED_TO_CART,
         payload: goodId
     }
 }
 
 export const goodAddedToWishList = (goodId) => {
     return {
-        type: 'GOOD_ADDED_TO_WISHLIST',
+        type: GOOD_ADDED_TO_WISHLIST,
         payload: goodId
     }
 }
 export const goodRemovedFromWishList = (goodId) => {
     return {
-        type: 'GOOD_REMOVED_FROM_WISHLIST',
+        type: GOOD_REMOVED_FROM_WISHLIST,
         payload: goodId
     }
 }
 
 export const goodRemovedFromCart = (goodId) => {
     return {
-        type: 'GOOD_REMOVED_FROM_CART',
+        type: GOOD_REMOVED_FROM_CART,
         payload: goodId
     }
 }
 export const allGoodsRemovedFromCart = (goodId) => {
     return {
-        type: 'ALL_GOODS_REMOVED_FROM_CART',
+        type: ALL_GOODS_REMOVED_FROM_CART,
         payload: goodId
     }
 }
 export const allGoodsRemovedFromWishList = (goodId) => {
     return {
-        type: 'ALL_GOODS_REMOVED_FROM_WISHLIST',
+        type: ALL_GOODS_REMOVED_FROM_WISHLIST,
         payload: goodId
     }
 }
 
 export const allGoodsFromWishListAddedToCart = (wishedItems) => {
     return {
-        type: 'ALL_GOODS_FROM_WISHLIST_ADDED_TO_CART',
+        type: ALL_GOODS_FROM_WISHLIST_ADDED_TO_CART,
         payload: wishedItems
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {goodRemovedFromWishList, allGoodsRemovedFromWishList, allGoodsFromWishListAddedToCart, totalReducer} from "../../actions"
+import {goodRemovedFromWishList, allGoodsRemovedFromWishList, allGoodsFromWishListAddedToCart, totalReducer} from "../../actions/goods"
 import { connect } from "react-redux"
 
 

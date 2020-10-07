@@ -1,5 +1,5 @@
 import React from 'react'
-import {goodAddedToCart, goodRemovedFromCart, allGoodsRemovedFromCart, totalReducer} from "../../actions"
+import {goodAddedToCart, goodRemovedFromCart, allGoodsRemovedFromCart, totalReducer} from "../../actions/goods"
 import "./ShoppingCartTable.css"
 import { connect } from "react-redux"
 
